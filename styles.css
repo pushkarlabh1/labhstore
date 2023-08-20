@@ -1,0 +1,257 @@
+:root{
+    --white: hsl(0, 0%, 100%) ;
+    --text:  hsl(0, 0%, 47%) ;
+    --pale: hsl(32, 37%, 92%);
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: var(--pale);
+}
+#header-image{
+    width: 100px;
+    object-fit: contain;
+    
+}
+
+#nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    width:100%;
+    top: 0;
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.nav-links{
+    display: flex;
+    list-style:none;
+    font-family: "Fraunces"
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 0 30px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.the-product 
+{
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 10px;
+    font-family: "montserrat Subrayada";
+}
+
+#email-section {
+    margin-top: 170px;
+    
+}
+
+input {
+    padding: 13px;
+    width:20%;
+    border-radius: 8px;
+    border: 1px solid var(--light green);
+}
+
+#submit {
+    background-color: rgb(42, 146, 42);
+    color: var(--white);
+    cursor: pointer;
+    width:10%;
+}
+
+section::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+section {
+    margin: 40px 20px; 
+    text-align: center;
+}
+h3 {
+    font-family: "fraunces";
+    margin-bottom: 10px;
+}
+.icon{
+    color: green;
+    margin: 30px;
+
+}
+
+#features{
+ 
+   
+    margin: auto;
+    max-width: 900px;
+    text-align: left;
+  
+}
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: "Montserrat Alternates";
+    text-align: left; 
+    background-color: #e1e6d7;
+    padding: 0 10px;
+    margin: 10px;
+    border-radius: px;
+}
+#video{
+    width: 70%;
+}
+.product-image{
+    width:100%;
+    margin: auto;
+    height: 500px;
+    border: 1px solid var(--text);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product1{
+    background-image: url(https://static.zara.net/photos///2023/I/0/2/p/6861/320/401/2/w/750/6861320401_2_5_1.jpg?ts=1691680456438);
+
+}
+
+.product2{
+    background-image: url(https://imagescdn.allensolly.com/img/app/product/8/896345-10941436.jpg?q=75&auto=format&w=342);
+
+}
+
+.product3{
+    background-image: url(https://static.zara.net/photos///2023/I/0/2/p/7545/534/021/2/w/750/7545534021_2_1_1.jpg?ts=1691142187769);
+
+}
+
+.product4{
+    background-image: url(https://ohelloclothing.com/cdn/shop/products/billy-printed-satin-midi-dress-red-dress-30070602924097_1199x1800.jpg?v=1662559978);
+}
+
+.product5{
+    background-image: url(https://imagescdn.allensolly.com/img/app/product/9/910469-11248717.jpg?q=75&auto=format&w=342);
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.content {
+    font-family: "Montserrat Alternates";
+     color: var (--text); 
+     margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.main-price {
+    margin-right: 20px; 
+    font-size: 30px;
+    font-family: "fraunces";
+    color: green;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 18px;
+    color: rgba(255, 0, 0, 0.619);
+}
+.brand{
+    font-family: "montserrat Subrayada";
+    letter-spacing: 3px;
+    color: green;
+    text-transform: uppercase;
+}
+
+.header {
+    font-family: "fraunces";
+    margin: 10px 0;
+    color: var (--header-text);
+}
+
+.add {
+    background-color: green;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    color: white;
+    font-family: "Montserrat Alternates";
+     font-weight: 700;
+     font-size: medium;
+      margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    #nav-bar {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (450px < width < 600px) {
+    .card {
+    font-size: 0.85rem;
+    }
+    •product-image { height: 400px;
+    }
+}
+
+@media only screen and (450px <= width )
+{
+.card {
+ display: flex;
+ max-width: 650px;
+}
+.inner-card{
+    width: 300px;
+    padding: 20px;
+}
+
+.product-image {
+    width: 400px;
+    border-radius : 10px 0 0 10px;
+}
+}
+
+@media only screen and (width >= 1000px) {
+    #video {
+        width: 70%;
+    }
+    .products-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
